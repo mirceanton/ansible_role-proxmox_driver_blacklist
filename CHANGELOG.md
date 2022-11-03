@@ -2,4 +2,4 @@
 
 ## v1.0.0
 
-* Initial release of the `mirceanton.<rolename>` role 🚀
+* Initial release of the `mirceanton.proxmox_driver_blacklist` role 🚀

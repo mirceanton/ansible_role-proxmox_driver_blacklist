@@ -1,12 +1,12 @@
-Role Name
-=========
+Proxmox: Driver Blacklist
+=========================
 
-A brief description of the role goes here.
+An Ansible role that configures the blacklisted drivers on a Proxmox VE host. 
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+N/A.
 
 Role Variables
 --------------
