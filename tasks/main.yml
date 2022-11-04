@@ -5,7 +5,7 @@
     line: "blacklist {{ item }}"
     mode: u=rw,g=r,o=r
     create: true
-  loop: "{{ proxmox_drivers_blacklist }}"
+  loop: "{{ proxmox_driver_blacklist }}"
   notify:
     - Update initramfs
     - Reboot
