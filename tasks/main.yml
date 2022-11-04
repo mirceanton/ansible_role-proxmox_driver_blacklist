@@ -1,2 +1,11 @@
 ---
-# tasks file for template
+- name: Blacklist drivers
+  ansible.builtin.lineinfile:
+    path: "{{ proxmox_driver_blacklist_file_path }}"
+    line: "blacklist {{ item }}"
+    mode: "{{ proxmox_driver_blacklist_file_mode }}"
+    create: true
+  loop: "{{ proxmox_driver_blacklist }}"
+  notify:
+    - Update initramfs
+    - Reboot

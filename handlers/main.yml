@@ -1,2 +1,6 @@
 ---
-# handlers file for template
+- name: Update initramfs
+  ansible.builtin.command: update-initramfs -u -k all
+
+- name: Reboot
+  ansible.builtin.reboot:
