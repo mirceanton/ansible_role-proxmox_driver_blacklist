@@ -1,9 +1,9 @@
 ---
 - name: Blacklist drivers
   ansible.builtin.lineinfile:
-    path: /etc/modprobe.d/blacklist.conf
+    path: "{{ proxmox_driver_blacklist_file_path }}"
     line: "blacklist {{ item }}"
-    mode: u=rw,g=r,o=r
+    mode: "{{ proxmox_driver_blacklist_file_mode }}"
     create: true
   loop: "{{ proxmox_driver_blacklist }}"
   notify:

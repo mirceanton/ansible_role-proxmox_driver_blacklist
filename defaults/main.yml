@@ -1,0 +1,6 @@
+---
+# The path of the file that will hold the driver blacklist config
+proxmox_driver_blacklist_file_path: /etc/modprobe.d/blacklist.conf
+
+# The permissions of the file that will hold the driver blacklist config
+proxmox_driver_blacklist_file_mode: u=rw,g=r,o=r
