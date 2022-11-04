@@ -15,6 +15,8 @@ Role Variables
 | :------------------------: | :----------: | :---------------------------: |
 | `proxmox_driver_blacklist` | list(string) | List of drivers to blacklist. |
 
+To check the default variables, take a look at the [defaults](defaults/main.yml) file.
+
 Dependencies
 ------------
 
