@@ -10,7 +10,7 @@ galaxy_info:
   min_ansible_version: "2.1"
 
   platforms:
-    - name: Debian
+    - name: Proxmox
       versions:
         - 7.2
         - 7.1
